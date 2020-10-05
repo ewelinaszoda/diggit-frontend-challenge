@@ -1,4 +1,1 @@
-
-# diggit-frontend-challenge
-# diggit-frontend-challenge
-# diggit-frontend-challenge
+run < npm start > in terminal to get started
