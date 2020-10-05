@@ -14,6 +14,9 @@ import verificationIcon from "../../assets/icons/verificationIcon.svg";
 import lockedPadlock from "../../assets/icons/lockedPadlock.svg";
 
 import styles from "./MainBoard.module.css";
+import Graphs from "../Graphs";
+import stats from "../common/stats";
+import SignupsChart from "../common/PieGraph";
 
 const MainBoard = ({
   individualsData,
@@ -79,6 +82,7 @@ const MainBoard = ({
           <div className={styles.display}>
             <div className={styles.displayCharts}>
               <div className={styles.upperChart}>
+                <Graphs stats={stats} />
                 {/* Individuals Chart */}
                 {/* Required data: individuals */}
               </div>
@@ -88,7 +92,7 @@ const MainBoard = ({
               </div>
             </div>
             <div className={styles.displayInfo}>
-
+              <SignupsChart stats={stats} />
               <div className={styles.sort}>
                 <GenderSort
                   selectGender={sort_select_gender}
